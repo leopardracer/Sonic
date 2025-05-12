@@ -303,7 +303,7 @@ var (
 	}
 	JSTracerLimitFlag = cli.IntFlag{
 		Name:  "rpc.jstracerlimit",
-		Usage: "Limit for concurent js engines in RPC calls execution",
+		Usage: "Limit for concurrent js engines in RPC calls execution",
 		Value: gossip.DefaultConfig(cachescale.Identity).JSTracerLimit,
 	}
 	MaxResponseSizeFlag = cli.IntFlag{
