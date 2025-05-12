@@ -233,7 +233,7 @@ func getEVMEnv() *vm.EVM {
 func checkTracerResult(t *testing.T, result json.RawMessage, expectedResult string) {
 	result, err := json.MarshalIndent(result, "", "    ")
 	if err != nil {
-		t.Errorf("problem with formating result, got error: %v", err)
+		t.Errorf("problem with formatting result, got error: %v", err)
 	}
 
 	if expectedResult != string(result) {
